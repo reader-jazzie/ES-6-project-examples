@@ -1,3 +1,4 @@
+let ages=[10,89,34,12,15,13,78,55,60];
 let companies=[
     {name :"Jaspreet Kaur",age:35,gender:"female",category:"Retail",start_year:1981,end_year:1997},
     {name: "Amrit",age:32,gender:"male",category:"Wholesale",start_year:1988,end_year:1998},
@@ -5,8 +6,10 @@ let companies=[
     {name:"Harsimran Singh",age:37,gender:"Male",category:"Wholesaler",start_year:1991,end_year:1997}
     ];
 
-    const result=companies.map((companies)=>{
-        return `${companies.name} and [${companies.end_year}-${companies.start_year}]`
-
-    });
+    const result=companies.map((companies)=>{ return `${companies.name} and [${companies.end_year}-${companies.start_year}]`});
     console.log(result);
+
+    //calculating double the ages using map()
+
+    let ageDouble=ages.map((ages)=>ages*2);
+    console.log(ageDouble);
